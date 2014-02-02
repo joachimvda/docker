@@ -14,7 +14,7 @@ run apt-get -y upgrade
 # and keep us up-to-date
 run apt-get -y install unattended-upgrades
 
-@and please give me joe
+# and please give me joe
 run apt-get -y install joe
 
 # Keep upstart from complaining
