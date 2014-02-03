@@ -1,3 +1,5 @@
+### joachimvda/base/baremetal
+
 # Yes, we are running LTS
 from ubuntu:12.04
 
@@ -27,7 +29,7 @@ run mkdir -p /var/log/supervisor
 run locale-gen en_US en_US.UTF-8
 #add supervisord-bare.conf /etc/supervisor/conf.d/
 
-# Change root password
+# Change root password 
 #run echo 'root:XXXXXXXXX' | chpasswd
 
 cmd ["/usr/bin/supervisord", "-n"]

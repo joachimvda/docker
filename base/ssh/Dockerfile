@@ -1,5 +1,7 @@
+### joachimvda/base/ssh
+
 # based Use my baremetal, Ubuntu LTS
-from joachimvda/base/baremetal
+from joachimvda/base/secured
 
 # Joachim is in charge
 maintainer Joachim Van der Auwera <joachim@progs.be>
@@ -7,6 +9,7 @@ maintainer Joachim Van der Auwera <joachim@progs.be>
 # add a user
 run adduser --disabled-password --gecos "" joachim
 run echo 'joachim:joachim' | chpasswd
+run usermod -a -G sudo joachim
 
 # SSH base
 run apt-get -y install openssh-server
@@ -17,8 +20,9 @@ run mkdir -p /var/run/sshd
 # Prepare
 run mkdir -p /home/joachim/.ssh && chown joachim:joachim /home/joachim/.ssh && chmod 0700 /home/joachim/.ssh
 
-# Secure configuration - disable password authentication
+# Secure configuration - disable password authentication, no root login
 RUN sed -i -e "s/#PasswordAuthentication yes/PasswordAuthentication no/g" /etc/ssh/sshd_config
+RUN sed -i -e "s/PermitRootLogin yes/PermitRootLogin no/g" /etc/ssh/sshd_config
 
 # Add files
 add supervisord-ssh.conf /etc/supervisor/conf.d/
