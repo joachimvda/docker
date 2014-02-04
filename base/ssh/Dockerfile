@@ -1,9 +1,7 @@
 ### joachimvda/base/ssh
 
-# based Use my baremetal, Ubuntu LTS
 from joachimvda/base/secured
 
-# Joachim is in charge
 maintainer Joachim Van der Auwera <joachim@progs.be>
 
 # add a user
