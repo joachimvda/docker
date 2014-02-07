@@ -1,4 +1,4 @@
-### joachimvda/teamcity/teamcity-agent
+### joachimvda/teamcity-agent
 
 ### it is expected that this build has the teamcity unpacked buildAgent directory (others can be removed) ~/teamcity
 ### make sure to configure TeamCity/buildAgent/conf/buildAgent.properties to allow the build agent to contact the server
@@ -7,7 +7,7 @@
 ### docker run -d -p 1222:22 -p 1290:9090 -v /var/docker/teamcity-agentX:/home/teamcity:rw joachimvda/teamcity/teamcity-agent
 
 
-from joachimvda/base/java8
+from joachimvda/base-java8
 
 maintainer Joachim Van der Auwera <joachim@progs.be>
 

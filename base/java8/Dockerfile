@@ -1,6 +1,6 @@
-### joachimvda/base/java8
+### joachimvda/base-java8
 
-from joachimvda/base/ssh
+from joachimvda/base-ssh
 
 maintainer Joachim Van der Auwera <joachim@progs.be>
 

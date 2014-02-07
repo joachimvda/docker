@@ -6,7 +6,7 @@
 ### docker run -d -p 1722:22 -p 1717:27017 -p 1718:28017 -v /var/docker/mongodb:/data:rw joachimvda/mongodb
 
 
-from joachimvda/base/ssh
+from joachimvda/base-ssh
 
 maintainer Joachim Van der Auwera <joachim@progs.be>
 

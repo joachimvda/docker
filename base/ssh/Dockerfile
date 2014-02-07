@@ -1,6 +1,6 @@
-### joachimvda/base/ssh
+### joachimvda/base-ssh
 
-from joachimvda/base/secured
+from joachimvda/base-secured
 
 maintainer Joachim Van der Auwera <joachim@progs.be>
 

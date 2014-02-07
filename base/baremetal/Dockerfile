@@ -1,4 +1,4 @@
-### joachimvda/base/baremetal
+### joachimvda/base-baremetal
 
 # Yes, we are running LTS
 from ubuntu:12.04
